@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "id": "e14db3ba39c7de87",
         "type": "tab",
         "label": "validations",
@@ -2048,6 +2049,19 @@
         "id": "8e7579fd16be8d41",
         "type": "inject",
         "z": "dfc98e55479cf8ad",
+=======
+        "id": "018c33e902bbe930",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e3e5ba2f13718bbd",
+        "type": "inject",
+        "z": "018c33e902bbe930",
+>>>>>>> ffb731b93467cdc24790dcae0f508b9de54b4f57
         "name": "",
         "props": [
             {
@@ -2065,10 +2079,36 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
+<<<<<<< HEAD
         "x": 560,
         "y": 160,
         "wires": [
             []
         ]
+=======
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "8606d51f9d913312"
+            ]
+        ]
+    },
+    {
+        "id": "8606d51f9d913312",
+        "type": "debug",
+        "z": "018c33e902bbe930",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 80,
+        "wires": []
+>>>>>>> ffb731b93467cdc24790dcae0f508b9de54b4f57
     }
 ]
