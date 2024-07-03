@@ -511,16 +511,16 @@
     "type": "debug",
     "z": "e14db3ba39c7de87",
     "g": "7a1ee31b3ca78e38",
-    "name": "Debug Incoming Payload",
+    "name": "aaaaaaaaaaaaaaaaaaaaa",
     "active": false,
     "tosidebar": true,
-    "console": false,
+    "console": true,
     "tostatus": false,
     "complete": "payload",
     "targetType": "msg",
     "statusVal": "",
     "statusType": "auto",
-    "x": 750,
+    "x": 760,
     "y": 660,
     "wires": []
   },
@@ -632,9 +632,8 @@
     "metadatamaxage": 300000,
     "allowautotopiccreation": false,
     "connection": {
-      "name": "Spinal producer local mm",
-      "host": "localhost:9092",
-      "guid": "080217AE7734B6F1E06344FDA8C0B34E"
+      "name": "broker name",
+      "host": "localhost:9092"
     },
     "broker": "339",
     "x": 1770,
