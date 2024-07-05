@@ -247,7 +247,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 520,
+        "x": 480,
         "y": 180,
         "wires": [
             []
