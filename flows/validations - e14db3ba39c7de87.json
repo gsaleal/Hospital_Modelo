@@ -36,9 +36,7 @@
       "15903b1f0cbf60c7"
     ],
     "x": 234,
-    "y": 319,
-    "w": 1672,
-    "h": 162
+    "y": 319
   },
   {
     "id": "7a1ee31b3ca78e38",
@@ -61,12 +59,11 @@
       "500c77a9962bd9bf",
       "779e9ff4e1786fd0",
       "618f467adcc318a1",
-      "ba5036fa5af8f20d"
+      "ba5036fa5af8f20d",
+      "4c43b1aa804de62b"
     ],
     "x": 234,
-    "y": 539,
-    "w": 1672,
-    "h": 162
+    "y": 539
   },
   {
     "id": "6f9e5eb760a7caa9",
@@ -92,9 +89,7 @@
       "ce35ef0a2cddcc88"
     ],
     "x": 234,
-    "y": 759,
-    "w": 1672,
-    "h": 162
+    "y": 759
   },
   {
     "id": "33dcd58f6372ac68",
@@ -120,9 +115,7 @@
       "ded7d5db8c483c90"
     ],
     "x": 234,
-    "y": 979,
-    "w": 1672,
-    "h": 162
+    "y": 979
   },
   {
     "id": "dfcd1f9bd386b1aa",
@@ -148,9 +141,7 @@
       "1ad5843b885bf6a2"
     ],
     "x": 234,
-    "y": 119,
-    "w": 1672,
-    "h": 162
+    "y": 99
   },
   {
     "id": "1c43f33bd43b32c3",
@@ -176,9 +167,7 @@
       "f14cd9b006350fcc"
     ],
     "x": 234,
-    "y": 1179,
-    "w": 1752,
-    "h": 162
+    "y": 1179
   },
   {
     "id": "a90f333450a512c3",
@@ -199,9 +188,7 @@
       "13f4c5b602cff48c"
     ],
     "x": 234,
-    "y": 1379,
-    "w": 1172,
-    "h": 162
+    "y": 1379
   },
   {
     "id": "a2da6439f1f21570",
@@ -228,9 +215,7 @@
       "63da2edd5cab4c31"
     ],
     "x": 234,
-    "y": 1599,
-    "w": 1812,
-    "h": 342
+    "y": 1599
   },
   {
     "id": "6379c764cd7e65b8",
@@ -367,6 +352,7 @@
     "id": "9bfad12288b65b6c",
     "type": "spinal-consumer",
     "z": "e14db3ba39c7de87",
+    "d": true,
     "g": "d248f68bef164759",
     "name": "Synonyms Check Consumer API",
     "outOfRangeOffset": "earliest",
@@ -502,7 +488,8 @@
     "wires": [
       [
         "59f77c89f29d011d",
-        "2289d870f792f8a2"
+        "2289d870f792f8a2",
+        "4c43b1aa804de62b"
       ]
     ]
   },
@@ -511,16 +498,16 @@
     "type": "debug",
     "z": "e14db3ba39c7de87",
     "g": "7a1ee31b3ca78e38",
-    "name": "aaaaaaaaaaaaaaaaaaaaa",
+    "name": "Debug Incoming Payload",
     "active": false,
     "tosidebar": true,
-    "console": true,
+    "console": false,
     "tostatus": false,
     "complete": "payload",
     "targetType": "msg",
     "statusVal": "",
     "statusType": "auto",
-    "x": 760,
+    "x": 750,
     "y": 660,
     "wires": []
   },
@@ -632,8 +619,9 @@
     "metadatamaxage": 300000,
     "allowautotopiccreation": false,
     "connection": {
-      "name": "broker name",
-      "host": "localhost:9092"
+      "name": "Spinal producer local mm",
+      "host": "localhost:9092",
+      "guid": "080217AE7734B6F1E06344FDA8C0B34E"
     },
     "broker": "339",
     "x": 1770,
@@ -891,6 +879,7 @@
     "id": "ce35ef0a2cddcc88",
     "type": "spinal-consumer",
     "z": "e14db3ba39c7de87",
+    "d": true,
     "g": "6f9e5eb760a7caa9",
     "name": "Sync Routine Check Consumer API",
     "outOfRangeOffset": "earliest",
@@ -1148,6 +1137,7 @@
     "id": "ded7d5db8c483c90",
     "type": "spinal-consumer",
     "z": "e14db3ba39c7de87",
+    "d": true,
     "g": "33dcd58f6372ac68",
     "name": "Schema Check Consumer API",
     "outOfRangeOffset": "earliest",
@@ -1171,6 +1161,7 @@
     "id": "808c889a30932fbe",
     "type": "spinal-consumer",
     "z": "e14db3ba39c7de87",
+    "d": true,
     "g": "dfcd1f9bd386b1aa",
     "name": "Tasy Application Check Consumer API",
     "outOfRangeOffset": "earliest",
@@ -1183,7 +1174,7 @@
     },
     "broker": "341",
     "x": 410,
-    "y": 160,
+    "y": 140,
     "wires": [
       [
         "6e23c464518acb66"
@@ -1200,7 +1191,7 @@
     "action": "obj",
     "pretty": false,
     "x": 630,
-    "y": 160,
+    "y": 140,
     "wires": [
       [
         "7c1cd7cf4eb1b709",
@@ -1222,7 +1213,7 @@
     "finalize": "",
     "libs": [],
     "x": 830,
-    "y": 160,
+    "y": 140,
     "wires": [
       [
         "9cbdad44b29a1416",
@@ -1245,7 +1236,7 @@
     "statusVal": "",
     "statusType": "auto",
     "x": 750,
-    "y": 240,
+    "y": 220,
     "wires": []
   },
   {
@@ -1255,7 +1246,7 @@
     "g": "dfcd1f9bd386b1aa",
     "name": "",
     "x": 1090,
-    "y": 160,
+    "y": 140,
     "wires": [
       [
         "7e16ea5c7a7e25d3",
@@ -1277,7 +1268,7 @@
     "finalize": "",
     "libs": [],
     "x": 1340,
-    "y": 160,
+    "y": 140,
     "wires": [
       [
         "1ad5843b885bf6a2",
@@ -1300,7 +1291,7 @@
     "statusVal": "",
     "statusType": "auto",
     "x": 1270,
-    "y": 240,
+    "y": 220,
     "wires": []
   },
   {
@@ -1318,7 +1309,7 @@
     "statusVal": "",
     "statusType": "auto",
     "x": 1030,
-    "y": 240,
+    "y": 220,
     "wires": []
   },
   {
@@ -1331,7 +1322,7 @@
     "action": "",
     "pretty": false,
     "x": 1550,
-    "y": 160,
+    "y": 140,
     "wires": [
       [
         "e0bab077b111c92f",
@@ -1362,7 +1353,7 @@
     },
     "broker": "339",
     "x": 1770,
-    "y": 160,
+    "y": 140,
     "wires": []
   },
   {
@@ -1380,7 +1371,7 @@
     "statusVal": "",
     "statusType": "auto",
     "x": 1770,
-    "y": 240,
+    "y": 220,
     "wires": []
   },
   {
@@ -1398,13 +1389,14 @@
     "statusVal": "",
     "statusType": "auto",
     "x": 1530,
-    "y": 240,
+    "y": 220,
     "wires": []
   },
   {
     "id": "b059960547988a65",
     "type": "spinal-consumer",
     "z": "e14db3ba39c7de87",
+    "d": true,
     "g": "1c43f33bd43b32c3",
     "name": "Compatible Extension Version API",
     "outOfRangeOffset": "earliest",
@@ -1757,6 +1749,7 @@
     "id": "13f4c5b602cff48c",
     "type": "spinal-consumer",
     "z": "e14db3ba39c7de87",
+    "d": true,
     "g": "a90f333450a512c3",
     "name": "Smartlink Check Consumer API",
     "outOfRangeOffset": "earliest",
@@ -1805,6 +1798,7 @@
     "id": "5a7a17c4cbeae475",
     "type": "spinal-consumer",
     "z": "e14db3ba39c7de87",
+    "d": true,
     "g": "a2da6439f1f21570",
     "name": "Enable developer mode - Tasy 1835",
     "outOfRangeOffset": "earliest",
@@ -1812,8 +1806,8 @@
     "topic": "spinal.cmdk.settings.EnableDeveloperModeRequest",
     "groupid": "cmdk-smartlink-validations-developer-mode-request",
     "connection": {
-      "name": "Default broker",
-      "host": "kafka:29092"
+      "name": "broker name",
+      "host": "localhost:9092"
     },
     "broker": "0",
     "x": 400,
@@ -2031,6 +2025,24 @@
     "statusType": "auto",
     "x": 1720,
     "y": 1820,
+    "wires": []
+  },
+  {
+    "id": "4c43b1aa804de62b",
+    "type": "debug",
+    "z": "e14db3ba39c7de87",
+    "g": "7a1ee31b3ca78e38",
+    "name": "debug 1",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload.topic",
+    "targetType": "msg",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 1020,
+    "y": 620,
     "wires": []
   }
 ]
